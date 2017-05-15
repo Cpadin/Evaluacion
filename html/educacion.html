@@ -7,7 +7,7 @@
   </head>
   <body>
     <svg width="120" height="120">
-      <image xlink:href="logo/logo.svg" width="120px" height="120px" x="0" y="0"></image>
+      <image xlink:href="../logo/logo.svg" width="120px" height="120px" x="0" y="0"></image>
     </svg>
     <header>
     <h1>
@@ -16,8 +16,7 @@
     </header>
 
     <h2>Carolina Padin</h2>
-    <h3>26/04/1991</h3>
-    <h3>Argentina</h3>
+    <h3>Argentina, 26/04/1991</h3>
     <a href="../index.html">
       <ul>
         <li >Inicio</li>
@@ -61,8 +60,9 @@
     </table>
     <form>
     <h2>Agregar estudios</h2>
-      <label for="anio">Año</label></br>
-      <select name="anio" size="10">
+    <p>
+      <label for="anio"><strong>Año:</strong></label>
+      <select name="anio">
         <option value="1920">1920</option>
         <option value="1921">1921</option>
         <option value="1922">1922</option>
@@ -162,6 +162,23 @@
         <option value="2016">2016</option>
         <option value="2017">2017</option>
       </select>
+    </p>
+    <p>
+      <label for="institucion" value="institucion"><strong>Institución:</strong></label>
+      <input type="text" name="institucion" required>
+    </p>
+    <p>
+      <label for="lugar"><strong>Lugar:</strong></label>
+      <textarea name="lugar" rows="2" cols="80"></textarea>
+    </p>
+    <p>
+      <label for="culmino"><strong>¿Culminó?</strong></label>
+      <input type="radio" name="culmino" value="Si" checked>Si
+      <input type="radio" name="gender" value="No">No
+    </p>
+    <p>
+      <input type="submit" name="enviar" value="Enviar">
+    </p>
     </form>
     <footer>
        <p>
